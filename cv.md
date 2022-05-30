@@ -5,8 +5,8 @@
 * _Discord:_ цап#3354
 * _Telegram:_ @captsarap
 ## Any info about me:
-My name is Artem and at the moment, I live in Nizhny Tagil in Sverdlovsk Oblast. I didn't work at this moment. It's a little bit boring job with low salary. 
- I chosed Python to selfeducation. But about month ago I decided to change it to Frontend. I think that learning JS, creating websites on html and user interfaces using React libs is interesting. Becides, I want to practice my English. I know that it will be a hard way, but I like it. 
+My name is Artem and at the moment, I live in Nizhny Tagil in Sverdlovsk Oblast. I work on Gas station. It's a little bit boring job with low salary. 
+So I set a purpose to myself to change my location and job. At the beginning, I chose Python to selfeducation. But about month ago I decided to change it to Frontend. I think that learning JS, creating websites on html and user interfaces using React libs is interesting. Becides, I want to practice my English. I know that it will be a hard way, but I like it. 
 ## My skills:
 I studied Basic Python 3, HTML5, Basic CSS3 and Figma. 
 ## Code sample:
