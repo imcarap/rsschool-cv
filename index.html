@@ -1,12 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="icon" href="./assets/img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>CV</title>
 </head>
+
 <body>
-  <div class="c"></div>
+  <header class="header">
+  <div class="burger">
+    <div class="container">
+      <nav class="navigation">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a class="nav_link" href="#info">Information</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#education">Education</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#skills">Skills</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#courses">Courses</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#lang">Language</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#projects">Projects</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#code">Code</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="hero_container">
+        <section class="hero">
+          <img class="avatar" src="./assets/img/myphoto.png" alt="It's me. Not Mario">
+          <h1 class="my_name">Artem&nbsp;Koksharov / Junior&nbsp;FE&nbsp;developer</h1>
+        </section>
+      </div>
+      <section class="section" id="info">
+
+        <h2 class="section_title">General information about&nbsp;me:</h2>
+        <div class="section_block">
+          <p class="title_text information">My&nbsp;name is&nbsp;Artem and, at&nbsp;the moment. I&nbsp;live in&nbsp;Nizhny Tagil in&nbsp;Sverdlovsk Oblast. I&nbsp;work at&nbsp;a&nbsp;Gas station. It&rsquo;s a&nbsp;little bit boring job with low salary. So&nbsp;I&nbsp;set a&nbsp;goal to&nbsp;myself to&nbsp;change my&nbsp;location and job. At&nbsp;the beginning, I&nbsp;chose Python for self-education. But about a&nbsp;month ago&nbsp;I decided to&nbsp;change it&nbsp;to&nbsp;Frontend. I&nbsp;think that learning&nbsp;JS, creating websites with HTML and user interfaces using React libs is&nbsp;interesting. Becides, I&nbsp;want to&nbsp;practice my&nbsp;English. I&nbsp;know that it&nbsp;will be&nbsp;hard, but&nbsp;I like&nbsp;it.
+          </p>
+        </div>
+      </section>
+      <section class="section" id="education">
+        <h2 class="section_title">Education:</h2>
+        <div class="section_block">
+          <p class="title_text education">I&nbsp;have secondary vocational education of <a class="edu_site" href="http://ntgmk.ru/">NTGMK. </a>I&nbsp;am metallurgist.</p>
+        </div>
+      </section>
+      <section class="section" id="skills">
+        <h2 class="section_title">My skills:</h2>
+        <div class="section_block">
+          <ul class="skills_list">
+            <li class="skills_item python">Basic Python 3</li>
+            <li class="skills_item css">CSS 3</li>
+            <li class="skills_item html">HTML 5</li>
+            <li class="skills_item fig">Basic Figma</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section" id="courses">
+        <h2 class="section_title">Courses:</h2>
+        <div class="section_block">
+          <ul class="courses_list">
+            <li>
+              <a href="https://stepik.org/course/67/syllabus" class="courses_link">Stepik: Programming on Python</a>
+            </li>
+            <li>
+              <a href="https://stepik.org/course/116411/syllabus" class="courses_link">Stepik: Testing from zero to specialist</a>
+            </li>
+            <li>
+              <a href="https://go.skillbox.ru/profession/professiya-frontend-pro" class="courses_link">Skillbox frontend course in progress</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section" id="lang">
+        <h2 class="section_title">Language:</h2>
+        <div class="section_block">
+          <p class="title_text language">Russian is&nbsp;native. Level of&nbsp;English is&nbsp;A2.</p>
+        </div>
+      </section>
+      <section class="section" id="projects">
+
+        <h2 class="section_title">Projects:</h2>
+        <div class="section_block">
+          <ul class="projects_list">
+            <li class="projects_item">
+              <a class="projects" href="https://luminous-seahorse-53886c.netlify.app">My first semi-project</a>
+            </li>
+            <li class="projects_item">
+              <a class="projects" href="https://imcarap.github.io/rsschool-cv/">That Curriculum Vitae</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section" id="code">
+        <h2 class="section_title">Code sample:</h2>
+        <div class="section_block">
+          <pre>
+            <code>
+var text = "Самопечатающийся текст Hello, World!";
+var delay = 100;
+var elem = document.getElementById("result");
+var print_text = function(text, elem, delay) {
+  if(text.length &gt; 0) {
+    elem.innerHTML += text[0];
+    setTimeout(
+      function() {
+        print_text(text.slice(1), elem, delay); 
+      }, delay
+    );
+  }
+}
+print_text(text, elem, delay);
+            </code>
+          </pre>
+        </div>
+      </section>
+      <section class="section" id="contacts">
+        <h2 class="section_title contacts">My contacts:</h2>
+        <div class="section_block">
+            <ul class="contacts_list">
+              <li class="contacts_item email">
+                E-mail:<a href="mailto:kaptema@gmail.com" class="mail_link"> kaptema@gmail.com</a>
+              </li>
+              <li class="contacts_item discord">
+                Discord: <a href="discord:цап#3354?chat" class="discord_link"> цап#3354</a>
+              </li>
+              <li class="contacts_item tg">
+                Telegram: <a href="tg:@captsarap?chat" class="tg_link"> @captsarap</a>
+              </li>
+            </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer_container">
+        <ul class="footer_list">
+          <li class="footer_items">
+            <a href="https://rs.school/js-stage0/" class="rss">
+              <img src="./assets/img/rs_school_js.svg" alt="Rolling Scopes School Course" class="rs_logo">
+            </a>
+          </li>
+          <li class="footer_items">
+            <p class="year"> ©&nbsp;2022 </p>
+          </li>
+          <li class="footer_items">
+            <a href="https://github.com/imcarap" class="my_gh"><img src="./assets/img/GitHub_Logo_White.png" alt="My github profile" class="gh_image">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
 </body>
+
+
+
 </html>
